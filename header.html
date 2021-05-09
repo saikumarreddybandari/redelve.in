@@ -1,0 +1,824 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- upper header -->
+    <section class="upper-header header1 container-fluid">  
+        <div class="row">
+            <div class="col-md-5">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href=""><button class="Subscribe_btn">Subscribe</button></a>
+                    </li>
+                    <li>
+                        <div class="">
+                            <button class="btn dropdown-toggle" style="font-size:75%" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ReDel Group
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <button class="btn dropdown-toggle" style="font-size:75%;" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Follow Us
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-7  header-right">
+                <ul class="list-unstyled">
+                    <li class="list-li">
+                        <a href="#">
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Sign in
+                        </a>
+                    </li>
+                    <li class="list-li acc">
+                        <a href="#">Create Account</a>
+                    </li>
+                    <!-- <li class="list-li" *ngIf="loggedIn">
+                        <a href="#" [routerLink]="['/user']" href="user" routerLinkActive="active">Profile</a>
+                    </li>
+                    <li class="list-li" *ngIf="loggedIn">
+                        <a href="#" (click)="logout($event)">Logout</a>
+                    </li> -->
+
+
+                    <!-- <li class="list-li">
+                          <a href="">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Cart
+                          </a>
+                      </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ///upper header -->
+
+    <!-- <section class="main-menu"> -->
+    <!-- logo -->
+
+    <div class="logo-section">
+        <div class="row">
+            <div class="col-md-6">
+                <a href=""><img class="logo" src="./assets/images/redelve_logo.png"></a>
+            </div>
+            <div class="col-md-6">
+                <span>
+                    <a href=""><img class="logo-banner" src="./assets/images/header-banner.jpg"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- //logo -->
+
+
+    <!-- menu -->
+
+    <!-- //menu -->
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light header sticky">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="popup-menu" class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link drop_heading">For Authors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                            >Publication Process</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" 
+                                               >Submit Your Paper</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" 
+                                                >Guide for Author</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                            >Track Article</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link drop_heading">For Readers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                               >Journal A to Z</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                >Latest Articles</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                               >Latest Journals</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                               >Manuscript Guidelines</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link drop_heading">For Librarians</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/openaccess']"
+                                                routerLinkActive="active">Open access</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/sitelicence']">Site
+                                                Licence</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                [routerLink]="['/currentopenings']">Current Openings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/conference']">Conference
+                                                page</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link drop_heading">Support</a>
+                                        </li>
+                                        <li class="nav-item" *ngIf="!loggedIn">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/signup']"
+                                                routerLinkActive="active">Sign Up</a>
+                                        </li>
+                                        <li class="nav-item" *ngIf="loggedIn">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/user']"
+                                                routerLinkActive="active">Profile</a>
+                                        </li>
+                                        <li class="nav-item" *ngIf="!loggedIn">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/login']"
+                                                routerLinkActive="active">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/editor-form']"
+                                                routerLinkActive="active">Editorial Registration</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/reviewer-form']"
+                                                routerLinkActive="active">Reviewer Registration</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                            </div>
+                        </div>
+                        <!--  /.container  -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Journals
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul id="popup-menu" class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link  drop_heading">Journals</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" [routerLink]="['/journal']">Journals A to
+                                                Z</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item "
+                                                [routerLink]="['/journal', 1]">Medical</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                [routerLink]="['/journal', 2]">Clinical</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                [routerLink]="['/journal', 3]">Pharmaceutical</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/journal', 4]">Science &
+                                                Technology</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                [routerLink]="['/journal', 5]">Environmental & Agricultural Science</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/journal', 6]">Animal
+                                                Sciences</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/journal', 7]">Management
+                                                & Humanities</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Advancements-in-Medicine.png"
+                                        alt="Medical.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Case-Reports.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Oncology.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a class="drop-all mr-5" routerLink="journal">view all&nbsp;<i
+                                            class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  /.container  -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul id="popup-menu" class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link drop_heading">Guidelines</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" [routerLink]="['/author-guidelines']"
+                                                routerLinkActive="active">Author Guidelines</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link dropdown-item" [routerLink]="['/editor-guidelines']"
+                                                routerLinkActive="active">Editor Guidelines </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/reviewer-guidelines']"
+                                                routerLinkActive="active">Reviewer Guidelines</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/manuscript-submission']"
+                                                routerLinkActive="active">Manuscript Submission</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/publication-ethics']"
+                                                routerLinkActive="active">Publication Process</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/processing-fees']"
+                                                routerLinkActive="active">Article Processing Fees</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item"
+                                                [routerLink]="['/editorial-board-member']"
+                                                routerLinkActive="active">Editorial Board Members</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  dropdown-item" [routerLink]="['/reviewer-board-member']"
+                                                routerLinkActive="active">Review Board Members</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Advancements-in-Medicine.png"
+                                        alt="Medical.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Case-Reports.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                                <div class="col-md-3">
+                                    <img class="drop-img" src="../../../assets/images/Oncology.png" width="70%;">
+                                </div>
+                                <!-- /.col-md-4  -->
+                            </div>
+                        </div>
+                        <!--  /.container  -->
+                    </div>
+                </li>
+
+
+                <!-- <li class="nav-item">
+                          <a class="nav-link" [routerLink]="['/current-issue']" routerLinkActive="active">Current Issues</a> 
+                      </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/membership']" routerLinkActive="active">Membership</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/conference']" routerLinkActive="active">Conference</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Search &nbsp;&nbsp;<i class="fa fa-search"></i>
+                </a>
+            </form>
+        </div>
+    </nav>
+ 
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+/* ---------------------header css------------ */
+
+
+/*  ///// upper header */
+.header1 li{
+    display: inline-block;
+    border-right: 1px solid silver;
+  
+ }
+ 
+ .header1{
+    background: #f6f6f6;
+    height:40px;
+    padding:0px 40px 0px 35px;
+    width: 100%;
+ }
+ 
+ .Subscribe_btn{
+    height:40px;
+    border:none;
+    border-radius:0px;
+    background: #f30;
+    color:#fff;
+    width:120px;
+    font-family:Georgia,serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    line-height: 42px;
+    text-transform: uppercase;
+ }
+ 
+ .follow{
+  background:transparent;
+  border:none;
+  color:#0b4f82;
+  font-family:Georgia,serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .12em;
+ }
+ 
+ .header-right{
+    float:right;
+ }
+ 
+ .list-li{
+    border-right:1px solid #c0c0c0;
+    padding-left:10px;
+    padding-right:10px;
+    height: 40px;
+ }
+ .list-li:nth-last-child(1) {
+    border-right:0px;
+ }
+ .list-li a{
+    color:#0b4f82;
+    font-family: Georgia,serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    line-height: 42px;
+ }
+ .header-right ul{
+    float: right;
+ }
+ .fa-user{
+     color:#000;
+ }
+ .acc{
+    background:#fcf9eb;
+ }
+ 
+ @media(min-width:1024px){   
+ }
+ @media(max-width:767px){
+    .header1{
+        display:none;
+    }
+    .main-menu{
+        display:none;
+    }
+ }
+ 
+ /*///// upper header */
+ 
+ 
+ /* logo */
+ .logo-section{
+   padding:25px 40px 25px 20px
+   
+ }
+ .logo-banner{
+    float:right;
+ }
+ 
+ .logo{
+    width:460px;
+    padding-left:5px;
+ }
+ 
+ /* /////logo */
+ 
+ 
+ 
+ /* menu */
+
+ .menu{
+    margin-bottom: 10px;
+ }
+ 
+ .menu-list a{
+    color:#474747;
+    font-family: Georgia,serif;
+    font-size: .85rem;
+    letter-spacing: .12em;
+    line-height: 42px;
+    padding-right:10px;
+    margin-top:10px;
+ }
+ 
+ .menu-list{
+    background:transparent;
+    border:none;
+    color:#474747;
+    font-family:  Georgia,serif;
+    font-size: .85rem;
+    letter-spacing: .12em;
+    padding-right:10px;
+ }
+
+
+ 
+ /* //menu */
+
+
+
+
+ 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* small screen */
+@media(min-width:998px){
+    .small-nav{
+        display:none;
+    }
+}
+.menu-icon{
+    font-size:20px;
+    cursor:pointer;
+    float:right
+}
+/* small screen */
+  /* search */
+  
+  .card{
+      position: absolute;
+      z-index: 1;
+      background:#eee;
+      border:none;
+      width:100%;
+      margin-top:-40px;
+  }
+  
+  .searchinput{
+      
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border-bottom: 2px solid rgb(255, 91, 50);
+      width:70%;
+      display: block;
+      margin : 0 auto;
+      height:60px;
+      margin-top:20px;
+  }
+  
+  .searchitems{
+      width:70%;
+      display: block;
+      margin : 0 auto;
+  }
+  
+  .close {
+      float: right;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      filter: alpha(opacity=20);
+      opacity: 1;
+    }
+  
+
+
+
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+ }
+ 
+ .navbar .dropdown-menu {
+   border:none;
+ }
+ 
+ /* breakpoint and up - mega dropdown styles */
+ @media screen and (min-width: 992px) {
+   
+   /* remove the padding from the navbar so the dropdown hover state is not broken */
+ .navbar {
+   padding-top:0px;
+   padding-bottom:0px;
+ }
+ 
+ /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+ .navbar .nav-item {
+   padding:.5rem .5rem;
+ }
+ 
+ #popup-menu>.navbar .nav-item{
+    padding:.7rem .7rem;
+ }
+
+ /* makes the dropdown full width  */
+ .navbar .dropdown {position:static;}
+ 
+ .navbar .dropdown-menu {
+   width:100%;
+   left:0;
+   right:0;
+   top:42px;
+   display:block;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s, opacity 0.3s linear;
+   
+ }
+   
+  
+ 
+   
+   /* shows the dropdown menu on hover */
+ .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+   display:block;
+   visibility: visible;
+   opacity: 1;
+   transition: visibility 0s, opacity 0.3s linear;
+ }
+   
+   .navbar .dropdown-menu {
+     border: 1px solid rgba(0,0,0,.15);
+     background-color: #fff;
+   }
+ 
+ }
+ 
+ .navbar-light .navbar-nav .nav-link{
+     color:#1a1a1a;
+     font-size:17px;
+     height: 40px;
+     margin-top:-10px;
+ }
+
+.dropdown-toggle::after{
+     display: none;
+ }
+
+ .dropdown-menu .drop_heading {
+    color:#1a1a1a;
+    background:transparent;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav .nav-item .dropdown-item{
+    color:#0b4f82;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom:-10px;
+  }
+  
+.drop-img{
+    margin:0 auto;
+    display: block;
+    margin-top:40px;
+}
+
+@media(max-width:992px){
+    nav{
+        display:none;
+    }
+    
+}
+
+@media(max-width:766px){
+    .logo-section{
+        display:none;
+    }
+    
+}
+.drop-all{
+    color:#f30;
+    float:right
+}
+
+
+.nav-item .active{
+    background: none;
+}
+
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+
+/* .header::before{
+    content:'';
+    position:absolute;
+    display:block;
+    top:0;
+    height:1px;
+    width:100%;
+    background:#ccc;
+    left:50%;
+    z-index:1;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+} */
+
+.header{
+    background-color: #f6f6f6;
+    margin-bottom:30px;
+    padding:0px 40px 0px 20px
+}
+
+
+.headersearch{
+    padding-right:20px;
+}
+
+.nav-link:hover{
+    border-bottom:2px solid #f30;  
+}
+
+.nav-link .dropdown-item :hover{
+    background-color:#fff;
+}
+.nav-link:active {
+    background-color:#fff;;
+  }
